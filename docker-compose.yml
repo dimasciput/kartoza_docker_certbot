@@ -1,0 +1,12 @@
+version: '2'
+services:
+
+  kartoza-certbot:
+    container_name: kartoza-certbot
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    hostname: kartoza-certbot
+    environment:
+      - DOMAIN=domain
+      - EMAIL=dimas@kartoza.com
