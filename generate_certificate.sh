@@ -3,6 +3,6 @@
 domain=${DOMAIN}
 email=${EMAIL}
 
-certbot --nginx certonly --non-interactive --agree-tos -w /webroot-path --email $email --domain $domain
+certbot certonly --webroot --non-interactive --agree-tos -w /webroot-path --email $email --domain $domain
 
 tail -f /dev/null
